@@ -484,6 +484,7 @@ section:nth-child(odd) { background: var(--surface); }
 
   .hamburger { display: flex; }
 
+  .hn-a, .hn-b { font-size: 36px; }
   .hn-b { align-self: flex-start; }
   .hero-lower { grid-template-columns: 1fr; }
   .hero-meta { align-items: flex-start; padding-right: 0; }
