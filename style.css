@@ -124,7 +124,7 @@ nav.scrolled {
 
 .hn-a, .hn-b {
   font-family: var(--font-d);
-  font-size: clamp(72px, 13vw, 172px);
+  font-size: clamp(28px, 13vw, 150px);
   font-weight: 800;
   line-height: 0.87;
   letter-spacing: -0.025em;
