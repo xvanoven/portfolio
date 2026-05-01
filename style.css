@@ -37,7 +37,7 @@ body::after {
   pointer-events: none;
   z-index: 9999;
   opacity: 0.025;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves[...]
   background-size: 200px 200px;
 }
 
@@ -155,15 +155,18 @@ nav.scrolled {
   color: var(--text-2);
   line-height: 1.45;
   font-family: var(--font-b);
+  order: 2;
+  text-align: right;
 }
 
 .hero-meta {
   display: flex; flex-direction: column; gap: 0.9rem;
-  align-items: flex-end;
-  padding-right: 3.5rem;
+  align-items: flex-start;
+  padding-right: 0;
+  order: 1;
 }
 
-.hm-row { display: flex; flex-direction: column; gap: 1px; text-align: right; }
+.hm-row { display: flex; flex-direction: column; gap: 1px; text-align: left; }
 .hm-label { font-size: 10px; letter-spacing: 1.5px; color: var(--text-3); text-transform: uppercase; }
 .hm-val { font-size: 14px; color: var(--text-2); }
 
@@ -488,6 +491,7 @@ section:nth-child(odd) { background: var(--surface); }
   .hn-b { align-self: flex-start; }
   .hero-lower { grid-template-columns: 1fr; }
   .hero-meta { align-items: flex-start; padding-right: 0; }
+  .hero-quote { text-align: left; order: auto; }
   .hm-row { text-align: left; }
 
   .exp-item { grid-template-columns: 1fr; gap: 0.4rem; }
