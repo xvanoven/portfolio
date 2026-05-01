@@ -103,7 +103,7 @@ nav.scrolled {
 .hero-inner {
   min-height: 100vh;
   display: flex; flex-direction: column; justify-content: flex-end;
-  padding: calc(var(--nav-h) + 4rem) var(--pad) 4rem;
+  padding: calc(var(--nav-h) + 1rem) var(--pad) 4rem;
   position: relative;
 }
 
